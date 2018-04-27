@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simplex</title>
+        <link rel='stylesheet' href="Css/bootstrap_css/css/bootstrap.css">
+        <link rel='stylesheet' href="Css/font-awsome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" >
+        <link rel='stylesheet' href="Css/main.css">
+    </head>
+    <body>
+        <div class="container problemConainer">
+            <div class="problemData">
+                <h3 class="text-center">Simplex Resoudre</h3>
+                <p class="lead text-center">Enter your informations of your simplex problem</p>
+                <div class="input-group input-group-lg inputData">
+                    <input type="number" max="9" min="2" class="form-control" placeholder="Number of Constraints" autofocus>
+                </div>
+                <div class="input-group input-group-lg inputData">
+                    <input type="number" max="9" min="2" class="form-control" placeholder="Number of Variables">
+                </div>
+            </div>
+            <div class="problemDataInput">
+                <div class="row table-responsive equation">
+                    <div class="col-md-offset-1 col-md-7  table-responsive matriceA"></div>
+                    <div class="col-md-4  table-responsive vectorB"></div>
+                    <div class="col-md-offset-1 col-md-11 table-responsive vectorC"></div>
+                </div>
+                <div class="btnGoContainer">
+                    <button class="btn btn-danger btn-lg btn-block">GO</button>
+                </div>
+            </div>
+        </div>
+        <div class="container solutionConainer">
+            <div class="display_sol">
+                <div class="variables_sol">
+                    <p class="lead x1_sol">X1&#58;<span></span></p>
+                    <p class="lead x2_sol">X2&#58;<span></span></p>
+                </div>
+                <button id="detail" class="btn btn-success btn-lg">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;  Details
+                </button>
+                <button id="new_prblm" class="btn btn-danger btn-lg">
+                    <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>&nbsp;  New Problem
+                </button>
+            </div>
+            <div class="hello">
+                <div class="stand_display">
+                    <div class="row table-responsive standardisation">
+                        <h3>Standardisation: </h3>
+                        <div class="col-md-offset-1 col-md-7  table-responsive stand_matriceA"></div>
+                        <div class="col-md-4  table-responsive stand_vectorB"></div>
+                        <div class="col-md-offset-1 col-md-11 table-responsive stand_vectorC"></div>
+                    </div>
+                </div>
+                <div class="itertion_detail"></div>
+            </div>
+        </div>
+        
+        
+        <script src="Js/jquery-3.2.1.min.js"></script>
+        <script src="Js/bootstrap_js/bootstrap.min.js"></script>
+        <script src="Js/plugins.js"></script>
+    </body>
+</html>
